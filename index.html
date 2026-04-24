@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Generation Brasil">
+  <meta name="description" content="Portfólio Marlos Santos, 
+                desenvolvedor Full Stack especializado em criar experiências 
+                digitais incríveis. Conheça meus projetos e entre em contato.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+  <title>Portfólio Marlos Santos</title>
+</head>
+
+<body>
+  <!-- Cabeçalho da página  -->
+  <header>
+    <div class="menu-content">
+      <!-- Titulo -->
+      <a href="index.html" id="titulo">Portfólio</a>
+      <!-- Menu -->
+      <nav>
+        <ul class="menu-list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Seção principal da página -->
+  <main>
+    <!-- Seção de boas vindas  -->
+    <section id="hero" class="section-container hero-container">
+      <article class="hero-content">
+        <span> 👋 olá,eu sou Marlos Santos</span>
+        <h1>Desenvolvedor Full Stack</h1>
+        <p>Transformo ideias em código e crio experiências digitais incríveis</p>
+
+        <div class="buttons-container">
+          <a href="#contact" class="botao">Entre em Contato</a>
+          <a href="#about" class="botao-outline">Saiba Mais....</a>
+        </div>
+      </article>
+      <!-- Imagem -->
+      <figure class="hero-imgage">
+        <img src="./assets/img/avatar_dev_man.svg" alt="foto do autor" class="float-animation">
+      </figure>
+    </section>
+    <!-- Seção sobre o autor -->
+    <section id="about" class="section-container about-container">
+      <figure class="about-imagem">
+        <img src="./assets/img/avatar_dev_man.svg" alt="foto do autor">
+      </figure>
+
+      <article class="about content">
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis commodi quae, numquam in distinctio aliquid
+          impedit dolorum fugit facere magni doloribus exercitationem necessitatibus aliquam amet quidem culpa alias ab
+          ea.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis excepturi iusto minima velit doloribus itaque
+          fuga suscipit. Doloremque, sapiente laudantium aperiam laboriosam architecto ipsum qui minima totam nam sequi
+          blanditiis.</p>
+
+        <div class="about-buttons-data">
+          <div class="buttons-container">
+            <a href="#" target="_blank" class="botao">GitHUb</a>
+            <a href="#" target="_blank" class="botao-outline"> Currículo</a>
+          </div>
+
+          <div class="data-container">
+            <div class="data-item">
+              <span class="data-number">100</span>
+              <span class="data-label">Seguidores</span>
+            </div>
+
+            <div class="data-item">
+              <span class="data-number">10</span>
+              <span class="data-label">Repositórios</span>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </section>
+    <!-- seção projetos -->
+    <section id="projects" class="section-container projects-container">
+      <h2>Meus Projetos</h2>
+
+      <!-- Swiper container -->
+
+      <div class="swiper projects-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="project-card">
+              <figure class="project-imagem">
+                <img src="./assets/icons/languages/github.svg" alt="ícone Github">
+              </figure>
+              <div class="projects-content">
+                <h3>Projeto Github</h3>
+                <p>Projeto Desenvolvido no GitHub</p>
+
+                <div class="projects-tag">
+                  <span class="tag"> GitHUb</span>
+                </div>
+
+                <div class="projects-button">
+                  <a href="#" target="_blank" class="botao botao-sm">GitHub</a>
+                  <a href="#" target="_blank" class="botao-outline botao-sm">
+                    deploy
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- BOTÕES DE NAVEGAÇÃO -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Seção formulários d contato -->
+    <section id="contact" class="section-container contact-container">
+      <!-- Redes sociais -->
+      <article class="contact-info">
+        <h2>Entre em contato</h2>
+        <p>Sinta-se a vontade para entrar em contato comigo!</p>
+
+        <div class="social-container">
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <img src="./assets/icons/social/linkedin.svg" alt=" Link para o linkedin">
+          </a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <img src="./assets/icons/social/github.svg" alt=" Link para o github">
+          </a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <img src="./assets/icons/social/instagram.svg" alt=" Link para o instagram">
+          </a>
+        </div>
+      </article>
+
+      <!-- FORMULÁRIO -->
+      <label for="Nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+      <span id="erro-nome"></span>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu E-email">
+      <span id="erro-email"></span>
+
+      <label for="assunto">Assunto</label>
+      <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto da mensagem">
+      <span id="erro-assunto"></span>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="escreva sua mensagem aqui...."></textarea>
+      <span id="erro-nome"></span>
+
+      <button class="botao" type="submit">Enviar mensagem</button>
+    </section>
+  </main>
+  <!-- Rodapé da página -->
+  <footer> Desenvolvido por Marlos Santos</footer>
+</body>
+
+</html>
